@@ -49,8 +49,31 @@
 
 
 #Chapter 2.3
-
-
+#Assignments:
+#	width = 17
+#	height = 12.0
+#	delimiter = '.'
+#Note: variables adopt the type of the assignments
+#Types of the assignment:
+#	width is int
+#	height is float
+#	delimiter is string
+#Exercise:
+#1. width/2
+#		value: 8
+#		type: int
+#2. width/2.0
+#		value:8.5
+#		type: float
+#3. height/3
+#		value: 4.0
+#		type: float
+#4. 1 + 2 * 5
+#		value: 11
+#		type: string
+#5. delimiter * 5
+#		value: '.....'
+#		type: string
 
 
 #Chapter 2.4
