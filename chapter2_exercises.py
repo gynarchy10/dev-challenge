@@ -77,3 +77,37 @@
 
 
 #Chapter 2.4
+#1. The volume of the sphere with radius r is 4/3(pi r^3). What is the volume of a sphere with radius 5?
+#	Hint: 392.7 is wrong (from: 4/3*3.14*125)
+r = 5
+volume = (4.0/3.0)*3.14*(r**3)
+print "Chapter 2.4, Q1: volume of the sphere with radius 5 is " + repr(volume)
+#
+#2. cover price for book is $24.95
+#	bookstores get 40% off
+#	shipping costs $3 for the first copy and 75 cents for additional copy
+#	cost for 60 copies?
+#Answer:
+n = 60
+book = 24.95-(24.95*.4)
+ship = (3*(n-(n-1))) + (.75*(n-1))
+total = (book * n) + ship
+print "Chapter 2.4, Q2: total price in dollars is " + repr(total)
+#
+#3. leave at 6:52 am
+#	run 1 mile at 8:15/mile
+#	run 3 miles at 7:12/mile
+#	run 1 mile at 8:15/mile
+#	time of arrival at home?
+#	give answer in hour, minute, and seconds
+#Answer:
+minute = 60
+hour = 60*minute
+start = (6*hour) + (52*minute)
+run = (2*((8*minute)+15)) + (3*((7*minute)+12))
+arrive = start + run
+arrivehour= arrive/hour
+arriveminute = (arrive%hour)/minute
+arrivesecond = arrive%arriveminute
+print "Chapter 2.4, Q3: arrive back home at " + repr(arrivehour) +":"+repr(arriveminute)+ ":" + repr(arrivesecond) +" am"
+
