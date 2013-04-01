@@ -51,12 +51,12 @@
 # Exercise 3.3
 # Write a function definition that right justifies a string, where the last letter is on the 70th column
 
-# def right_justify(s):
-	# length = len(s)
-	# spaces = (70 - length) * " "
-	# print spaces + s
+def right_justify(s):
+	length = len(s)
+	spaces = (70 - length) * " "
+	print spaces + s
 	
-# right_justify('allen')
+right_justify('allen')
 
 
 
@@ -108,7 +108,8 @@
 	
 # do_twice(print_twice,'spam')
 
-5.
+
+# 5.
 def do_twice(f,v):
 	f(v)
 	f(v)

@@ -22,8 +22,16 @@
 #		020 is 2(8**1) = 16; 
 #		0200 is 2(8**2) = 128; 
 #		02000 is 2(8**3) = 1024
-#	With additional numbers on the 3rd index: 
-#		011 is 1+(8**1) = 9; 
+#	With additional numbers: 
+#		011 is 1+(8**1) = 9;
+#		012 is 2+(8**1) = 10;
+#		013 is 3+(8**1) = 11;
+#		014 is 3+(8**1) = 12;
+#		015 is 3+(8**1) = 13;
+#		016 is 3+(8**1) = 14;
+#		017 is 3+(8**1) = 15;
+#		020 is 2(8**1) = 16; (Note how 8 and 9 are skipped here)
+#		021 is 1+2(8**1) = 17;
 #		0101 is 1+(8**2) = 65
 #	Continue to test other numbers: 
 #		when 8 and 9 are entered after a leading 0, an error is returned
