@@ -3,7 +3,8 @@
 # Name: Jenna Gopilan
 # Github username: gynarchy10
 
-#Chapter 2.1 Figure out what happens when an integer with a leading zero is printed, the result is not the same as the value entered.
+#Chapter 2.1 
+# Figure out what happens when an integer with a leading zero is printed, the result is not the same as the value entered.
 #	Investigating the hint: 01, 010, 0100 = type is int
 #	Using the hint: 
 #		when 01 is entered, the result is 1; 
@@ -78,11 +79,18 @@
 
 #Chapter 2.4
 #1. The volume of the sphere with radius r is 4/3(pi r^3). What is the volume of a sphere with radius 5?
-#	Hint: 392.7 is wrong (from: 4/3*3.14*125)
+# #	Hint: 392.7 is wrong (from: 4/3*3.14*125)
+# r = 5
+# volume = (4.0/3.0)*3.14*(r**3)
+# print "Chapter 2.4, Q1: volume of the sphere with radius 5 is " + repr(volume)
+# Another approach:
+from math import pi
 r = 5
-volume = (4.0/3.0)*3.14*(r**3)
+volume = (4.0/3.0)*pi*(r**3)
 print "Chapter 2.4, Q1: volume of the sphere with radius 5 is " + repr(volume)
-#
+
+
+
 #2. cover price for book is $24.95
 #	bookstores get 40% off
 #	shipping costs $3 for the first copy and 75 cents for additional copy
@@ -93,7 +101,10 @@ book = 24.95-(24.95*.4)
 ship = (3*(n-(n-1))) + (.75*(n-1))
 total = (book * n) + ship
 print "Chapter 2.4, Q2: total price in dollars is " + repr(total)
-#
+
+
+
+
 #3. leave at 6:52 am
 #	run 1 mile at 8:15/mile
 #	run 3 miles at 7:12/mile
@@ -110,4 +121,6 @@ arrivehour= arrive/hour
 arriveminute = (arrive%hour)/minute
 arrivesecond = arrive%arriveminute
 print "Chapter 2.4, Q3: arrive back home at " + repr(arrivehour) +":"+repr(arriveminute)+ ":" + repr(arrivesecond) +" am"
+
+
 
